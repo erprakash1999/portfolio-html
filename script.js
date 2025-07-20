@@ -4,40 +4,6 @@ AOS.init({
   once: true,
 });
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
-});
-
-// Active navigation link highlighting
-window.addEventListener("scroll", function () {
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 100;
-    if (window.pageYOffset >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
-});
 
 // Navbar background change on scroll
 window.addEventListener("scroll", function () {
@@ -132,33 +98,6 @@ const skillsObserver = new IntersectionObserver(
 if (skillsSection) {
   skillsObserver.observe(skillsSection);
 }
-
-
-
-// Project card hover effects
-document.querySelectorAll(".project-card").forEach((card) => {
-  card.addEventListener("mouseenter", function () {
-    this.style.transform = "scale(1.02)";
-  });
-
-  card.addEventListener("mouseleave", function () {
-    this.style.transform = "scale(1)";
-  });
-});
-
-// Add loading animation to external links
-document.querySelectorAll('a[href^="http"]').forEach((link) => {
-  link.addEventListener("click", function () {
-    const icon = this.querySelector("i");
-    if (icon) {
-      const originalClass = icon.className;
-      icon.className = "fas fa-spinner fa-spin";
-      setTimeout(() => {
-        icon.className = originalClass;
-      }, 2000);
-    }
-  });
-});
 
 
 // Add intersection observer for fade-in animations
