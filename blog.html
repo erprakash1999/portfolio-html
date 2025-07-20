@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe - Software Developer Portfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-code me-2"></i>John Doe
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="page-hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Blogs</h1>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section-padding bg-light">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Latest Blog Posts</h2>
+          <p class="lead">
+            Thoughts on technology, development, and industry trends
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card blog-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop"
+                class="card-img-top"
+                alt="React Best Practices"
+              />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge bg-primary">React</span>
+                  <span class="badge bg-secondary">JavaScript</span>
+                </div>
+                <h5 class="card-title">React Best Practices for 2024</h5>
+                <p class="card-text">
+                  Exploring the latest React patterns, hooks, and performance
+                  optimization techniques that every developer should know.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Jan 15, 2024</small>
+                  <a href="#" class="btn btn-outline-primary btn-sm"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card blog-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=200&fit=crop"
+                class="card-img-top"
+                alt="Cloud Architecture"
+              />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge bg-info">Cloud</span>
+                  <span class="badge bg-warning">AWS</span>
+                </div>
+                <h5 class="card-title">Building Scalable Cloud Architecture</h5>
+                <p class="card-text">
+                  A comprehensive guide to designing and implementing scalable
+                  cloud solutions using AWS services and best practices.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Dec 28, 2023</small>
+                  <a href="#" class="btn btn-outline-primary btn-sm"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card blog-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=200&fit=crop"
+                class="card-img-top"
+                alt="Full Stack Development"
+              />
+              <div class="card-body">
+                <div class="mb-2">
+                  <span class="badge bg-success">Node.js</span>
+                  <span class="badge bg-danger">MongoDB</span>
+                </div>
+                <h5 class="card-title">Full Stack Development Roadmap</h5>
+                <p class="card-text">
+                  A step-by-step guide for aspiring full stack developers,
+                  covering essential technologies and career progression tips.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Dec 10, 2023</small>
+                  <a href="#" class="btn btn-outline-primary btn-sm"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4" data-aos="fade-up">
+          <a href="#" class="btn btn-gradient">
+            <i class="fas fa-blog me-2"></i>View All Posts
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-light bg-dark pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- About / Bio -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="mb-3"><i class="fas fa-code me-2"></i>John Doe</h5>
+            <p>
+              I am a Full-Stack developer based in Pune, India. I am an
+              Information Technology undergraduate from SPPU. I am very
+              passionate about improving my coding skills & developing
+              applications & websites. I build WebApps and Websites using MERN
+              Stack. Working for myself to improve my skills. Love to build
+              Full-Stack clones.
+            </p>
+            <div class="social-grid">
+              <a href="#" class="social-circle linkedin"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-circle github"
+                ><i class="fab fa-github"></i
+              ></a>
+
+              <a href="#" class="social-circle facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-circle instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-circle youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+
+              <a href="#" class="social-circle telegram"
+                ><i class="fab fa-telegram-plane"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-6">
+            <h6 class="text-uppercase mb-3">Quick Links</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Subscribe Section -->
+          <div class="col-lg-4 col-md-6">
+            <h6 class="text-uppercase mb-3">Subscribe to My Newsletter</h6>
+            <p class="small">
+              Stay informed with exclusive project
+              updates and insights. Get the latest tech news, tips, and
+              resources—straight to your inbox.
+            </p>
+            <div class="row">
+              <form class="flex-column flex-sm-row">
+                <input
+                  type="email"
+                  class="form-control me-sm-2 mb-2 mb-sm-0 mb-3"
+                  placeholder="Your Email"
+                />
+                <br />
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane me-1"></i>Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-secondary mt-4 mb-3" />
+
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <p class="mb-0">
+              &copy; 2024 <strong>John Doe.</strong> All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#legal" class="me-3">Terms</a>
+            <a href="#legal" class="me-3">Privacy</a> |
+            <span class="small"
+              >Made with <i class="fas fa-heart text-danger"></i> in India</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>

@@ -112,19 +112,6 @@ body {
     border-radius: 2px;
 }
 
-.heading-design::after {
-    content: "";
-    position: absolute;
-    /* bottom: 0; */
-    top: 159px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-    border-radius: 2px;
-}
-
 .navbar {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.95) !important;
@@ -413,6 +400,17 @@ body {
     background: var(--dark-color);
     color: white;
     padding: 50px 0 20px;
+    padding: 50px 0 10px;
+    /* background: #272727; */
+
+    background-image: url("https://www.tylatwist.com/assets/images/about/footer.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .social-icon {
@@ -999,12 +997,12 @@ body {
 }
 
 
-/* .map-responsive {
+.map-responsive {
   position: relative;
   overflow: hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 50%;
   height: 0;
-} */
+}
 
 .map-responsive iframe {
   position: absolute;

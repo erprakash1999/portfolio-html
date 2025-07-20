@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe - Software Developer Portfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-code me-2"></i>John Doe
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <section class="page-hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Projects</h1>
+      </div>
+    </section>
+
+    <section id="projects" class="section-padding bg-light">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Featured Projects</h2>
+          <p class="lead">A showcase of my best work and personal projects</p>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+                class="card-img-top"
+                alt="E-commerce Platform"
+              />
+              <div class="project-overlay">
+                <div class="text-center">
+                  <h5>E-commerce Platform</h5>
+                  <p>Full-stack e-commerce solution with payment integration</p>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-light btn-sm">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-sm">
+                      <i class="fab fa-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">E-commerce Platform</h5>
+                <p class="card-text">
+                  A modern e-commerce platform built with React, Node.js, and
+                  MongoDB featuring user authentication, payment processing, and
+                  admin dashboard.
+                </p>
+                <div class="mb-3">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">MongoDB</span>
+                  <span class="tech-badge">Stripe</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
+                class="card-img-top"
+                alt="Task Management App"
+              />
+              <div class="project-overlay">
+                <div class="text-center">
+                  <h5>Task Management App</h5>
+                  <p>
+                    Collaborative project management tool with real-time updates
+                  </p>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-light btn-sm">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-sm">
+                      <i class="fab fa-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Task Management App</h5>
+                <p class="card-text">
+                  A collaborative task management application with real-time
+                  updates, drag-and-drop functionality, and team collaboration
+                  features.
+                </p>
+                <div class="mb-3">
+                  <span class="tech-badge">Vue.js</span>
+                  <span class="tech-badge">Express</span>
+                  <span class="tech-badge">Socket.io</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop"
+                class="card-img-top"
+                alt="Data Analytics Dashboard"
+              />
+              <div class="project-overlay">
+                <div class="text-center">
+                  <h5>Analytics Dashboard</h5>
+                  <p>Real-time data visualization and analytics platform</p>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-light btn-sm">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-sm">
+                      <i class="fab fa-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Analytics Dashboard</h5>
+                <p class="card-text">
+                  Interactive data visualization dashboard with real-time
+                  charts, filtering capabilities, and export functionality for
+                  business analytics.
+                </p>
+                <div class="mb-3">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">D3.js</span>
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">FastAPI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=250&fit=crop"
+                class="card-img-top"
+                alt="Mobile Banking App"
+              />
+              <div class="project-overlay">
+                <div class="text-center">
+                  <h5>Mobile Banking App</h5>
+                  <p>
+                    Secure mobile banking application with biometric
+                    authentication
+                  </p>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-light btn-sm">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-sm">
+                      <i class="fab fa-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mobile Banking App</h5>
+                <p class="card-text">
+                  Secure mobile banking application with biometric
+                  authentication, transaction history, and real-time
+                  notifications.
+                </p>
+                <div class="mb-3">
+                  <span class="tech-badge">React Native</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">MongoDB</span>
+                  <span class="tech-badge">JWT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop"
+                class="card-img-top"
+                alt="Social Media Platform"
+              />
+              <div class="project-overlay">
+                <div class="text-center">
+                  <h5>Social Media Platform</h5>
+                  <p>Full-featured social networking platform with messaging</p>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-light btn-sm">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-sm">
+                      <i class="fab fa-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Social Media Platform</h5>
+                <p class="card-text">
+                  A comprehensive social networking platform with posts,
+                  comments, messaging, and real-time notifications.
+                </p>
+                <div class="mb-3">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">GraphQL</span>
+                  <span class="tech-badge">Redis</span>
+                  <span class="tech-badge">AWS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card project-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop"
+                class="card-img-top"
+                alt="AI Chatbot"
+              />
+              <div class="project-overlay">
+                <div class="text-center">
+                  <h5>AI-Powered Chatbot</h5>
+                  <p>
+                    Intelligent customer service chatbot with NLP capabilities
+                  </p>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-light btn-sm">
+                      <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-sm">
+                      <i class="fab fa-github"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">AI-Powered Chatbot</h5>
+                <p class="card-text">
+                  Intelligent customer service chatbot with natural language
+                  processing and machine learning capabilities for automated
+                  support.
+                </p>
+                <div class="mb-3">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">TensorFlow</span>
+                  <span class="tech-badge">Flask</span>
+                  <span class="tech-badge">NLP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 d-none" data-aos="fade-up">
+          <a href="#" class="btn btn-gradient btn-lg">
+            <i class="fab fa-github me-2"></i>View All Projects on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-light bg-dark pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- About / Bio -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="mb-3"><i class="fas fa-code me-2"></i>John Doe</h5>
+            <p>
+              I am a Full-Stack developer based in Pune, India. I am an
+              Information Technology undergraduate from SPPU. I am very
+              passionate about improving my coding skills & developing
+              applications & websites. I build WebApps and Websites using MERN
+              Stack. Working for myself to improve my skills. Love to build
+              Full-Stack clones.
+            </p>
+            <div class="social-grid">
+              <a href="#" class="social-circle linkedin"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-circle github"
+                ><i class="fab fa-github"></i
+              ></a>
+
+              <a href="#" class="social-circle facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-circle instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-circle youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+
+              <a href="#" class="social-circle telegram"
+                ><i class="fab fa-telegram-plane"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-6">
+            <h6 class="text-uppercase mb-3">Quick Links</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Subscribe Section -->
+          <div class="col-lg-4 col-md-6">
+            <h6 class="text-uppercase mb-3">Subscribe to My Newsletter</h6>
+            <p class="small">
+              Stay informed with exclusive project
+              updates and insights. Get the latest tech news, tips, and
+              resources—straight to your inbox.
+            </p>
+            <div class="row">
+              <form class="flex-column flex-sm-row">
+                <input
+                  type="email"
+                  class="form-control me-sm-2 mb-2 mb-sm-0 mb-3"
+                  placeholder="Your Email"
+                />
+                <br />
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane me-1"></i>Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-secondary mt-4 mb-3" />
+
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <p class="mb-0">
+              &copy; 2024 <strong>John Doe.</strong> All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#legal" class="me-3">Terms</a>
+            <a href="#legal" class="me-3">Privacy</a> |
+            <span class="small"
+              >Made with <i class="fas fa-heart text-danger"></i> in India</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
