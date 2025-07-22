@@ -18,8 +18,10 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
 }
-html, body {
-  overflow-x: hidden;
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 .btn {
@@ -411,6 +413,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 footer a {
     color: #fff;
     text-decoration: none;
@@ -1001,64 +1004,117 @@ footer a {
 
 
 .map-responsive {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 50%;
-  height: 0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50%;
+    height: 0;
 }
 
 .map-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
 }
 
+/* Core card styles */
 .card {
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  color: var(--dark-color);
-  border-radius: 10px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  z-index: 1;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    color: var(--dark-color);
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    z-index: 1;
 }
 
-/* Animate on hover */
+/* Hover animation */
 .card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  color: #fff;
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    /* color: #fff; */
 }
 
-/* Sliding gradient overlay */
+/* Gradient overlay */
 .card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: var(--primary-gradient);
-  transition: all 0.6s ease;
-  z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-gradient);
+    transition: all 0.6s ease;
+    z-index: 0;
 }
 
-/* Slide from left to right on hover */
 .card:hover::before {
-  left: 0;
+    left: 0;
 }
 
-/* Text stays above gradient */
+/* Ensure content appears over overlay */
 .card-body {
-  position: relative;
-  z-index: 2;
-  transition: color 0.4s ease;
+    position: relative;
+    z-index: 2;
+    transition: color 0.4s ease;
 }
 
-/* Text turns white on hover */
-.card:hover h2,
-.card:hover p {
-  color: #fff;
+/* Text color on hover */
+.card:hover * {
+    color: #fff !important;
+}
+
+/* Fixed card height */
+.testimonial-hover {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Scrollable text area with line clamp */
+.testimonial-text {
+    max-height: 7.5em;
+    /* ~5 lines */
+    overflow-y: auto;
+    line-height: 1.5em;
+    padding-right: 5px;
+    text-overflow: ellipsis;
+}
+
+/* Optional scrollbar styles */
+.testimonial-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+.testimonial-text::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* Avatar styles */
+.avatar-circle {
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Define keyframes for rotation */
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animate the icon on card hover */
+.card:hover .card-body i {
+  animation: rotate360 0.6s ease-in-out;
 }
