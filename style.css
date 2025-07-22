@@ -1014,3 +1014,51 @@ footer a {
   width: 100%;
   border-radius: 10px;
 }
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  color: var(--dark-color);
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1;
+}
+
+/* Animate on hover */
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+/* Sliding gradient overlay */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-gradient);
+  transition: all 0.6s ease;
+  z-index: 0;
+}
+
+/* Slide from left to right on hover */
+.card:hover::before {
+  left: 0;
+}
+
+/* Text stays above gradient */
+.card-body {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+/* Text turns white on hover */
+.card:hover h2,
+.card:hover p {
+  color: #fff;
+}
