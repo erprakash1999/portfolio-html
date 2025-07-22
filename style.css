@@ -18,6 +18,9 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 .btn {
     padding: 10px 25px;
